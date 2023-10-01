@@ -1,8 +1,10 @@
 -- CLIENTES
 CREATE TABLE clientes (
-    cedula   NUMBER NOT NULL,
-    nombre   VARCHAR2(250) NOT NULL,
-    apellido VARCHAR2(250) NOT NULL,
+    cedula           NUMBER NOT NULL,
+    nombre           VARCHAR2(250) NOT NULL,
+    apellido         VARCHAR2(250) NOT NULL,
+    usuario_login    VARCHAR2(250) NOT NULL,
+    clave_login      VARCHAR2(250) NOT NULL,
     CONSTRAINT clientes_pk PRIMARY KEY ( cedula )
 );
 
@@ -183,7 +185,7 @@ CREATE TABLE usuarios (
     nombre           VARCHAR2(250) NOT NULL,
     apellido         VARCHAR2(250) NOT NULL,
     usuario_login    VARCHAR2(250) NOT NULL,
-    contraseña_login VARCHAR2(250) NOT NULL,
+    clave_login      VARCHAR2(250) NOT NULL,
     tipo_usuario     VARCHAR2(250) NOT NULL,
     hotel_nit        NUMBER NOT NULL,
     CONSTRAINT usuario_pk PRIMARY KEY ( cedula )
