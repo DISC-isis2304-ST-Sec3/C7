@@ -9,8 +9,8 @@ CREATE TABLE clientes (
 -- ESTABLECIMIENTOS
 CREATE TABLE establecimientos (
     id        NUMBER NOT NULL,
-    tipo      VARCHAR2(250) NOT NULL,
-    categoria VARCHAR2(250) NOT NULL CHECK (categoria IN ('supermercado', 'tienda')),
+    tipo      VARCHAR2(250) NOT NULL CHECK (tipo IN ('supermercado', 'tienda')),
+    categoria VARCHAR2(250) ,
     CONSTRAINT establecimiento_pk PRIMARY KEY ( id )
 );
 
@@ -49,6 +49,7 @@ CREATE TABLE habitaciones (
     hotel_nit       NUMBER NOT NULL,
     CONSTRAINT habitacion_pk PRIMARY KEY ( id_habitacion )
 );
+ALTER TABLE habitaciones ADD CONSTRAINT tipo_habitacion CHECK (tipo_habitacion IN ('sencilla', 'suite', 'doble'));
 
 -- HOTELES
 CREATE TABLE hoteles (
@@ -195,6 +196,7 @@ CREATE TABLE utensilios (
     costo  NUMBER NOT NULL,
     CONSTRAINT utensillo_pk PRIMARY KEY ( id )
 );
+-- ALTER TABLE factura DISABLE CONSTRAINT factura_reserva_fk;
 
 -- ESTABLECIMIENTOS
 ALTER TABLE establecimientos
@@ -244,6 +246,10 @@ ALTER TABLE planes_consumo
 ALTER TABLE productos
     ADD CONSTRAINT producto_establecimiento_fk FOREIGN KEY ( establecimiento_id )
         REFERENCES establecimientos ( id );
+    
+ALTER TABLE productos
+DISABLE CONSTRAINT producto_establecimiento_fk;
+
 
 ALTER TABLE productos
     ADD CONSTRAINT producto_restaurante_fk FOREIGN KEY ( restaurante_id )
