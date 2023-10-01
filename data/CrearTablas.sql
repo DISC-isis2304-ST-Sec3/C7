@@ -21,8 +21,6 @@ CREATE TABLE facturas (
     num_factura         NUMBER NOT NULL,
     vendedor            VARCHAR2(250) NOT NULL,
     costo_total         NUMBER NOT NULL,
-    reserva_servicio_id NUMBER NOT NULL,
-    reserva_id          NUMBER NOT NULL,
     CONSTRAINT factura_pk PRIMARY KEY ( num_factura )
 );
 
@@ -31,14 +29,14 @@ CREATE TABLE gimnasios (
     id        NUMBER NOT NULL,
     costo     NUMBER NOT NULL,
     capacidad NUMBER NOT NULL,
-    horario   DATE NOT NULL,
+    horario   VARCHAR2(250) NOT NULL,
     CONSTRAINT gimnasio_pk PRIMARY KEY ( id )
 );
 
 -- HABITACIONES
 CREATE TABLE habitaciones (
     id_habitacion   NUMBER NOT NULL,
-    tipo_habitacion VARCHAR2(250) NOT NULL,
+    tipo_habitacion VARCHAR2(250) NOT NULL CHECK (tipo_habitacion IN ('sencilla', 'suite', 'doble')),
     capacidad       NUMBER NOT NULL,
     costo_noche     NUMBER NOT NULL,
     television      VARCHAR2(250) NOT NULL CHECK (television IN ('true', 'false')),
@@ -51,7 +49,6 @@ CREATE TABLE habitaciones (
     hotel_nit       NUMBER NOT NULL,
     CONSTRAINT habitacion_pk PRIMARY KEY ( id_habitacion )
 );
-ALTER TABLE habitaciones ADD CONSTRAINT tipo_habitacion CHECK (tipo_habitacion IN ('sencilla', 'suite', 'doble'));
 
 -- HOTELES
 CREATE TABLE hoteles (
@@ -82,7 +79,7 @@ CREATE TABLE maquinas (
     nombre_maquina VARCHAR2(250) NOT NULL,
     codigo_maquina NUMBER NOT NULL,
     gimnasio_id    NUMBER NOT NULL,
-    CONSTRAINT maquina_pk PRIMARY KEY ( nombre_maquina )
+    CONSTRAINT maquina_pk PRIMARY KEY ( codigo_maquina )
 );
 
 -- PISCINAS
@@ -116,8 +113,8 @@ CREATE TABLE productos (
 -- RESERVAS
 CREATE TABLE reservas (
     id_reserva     NUMBER NOT NULL,
-    fecha_entrada  DATE NOT NULL,
-    fecha_salida   DATE NOT NULL,
+    fecha_entrada  VARCHAR2(250) NOT NULL,
+    fecha_salida   VARCHAR2(250) NOT NULL,
     num_personas   NUMBER NOT NULL,
     clientes_cedula NUMBER NOT NULL,
     factura_num    NUMBER NOT NULL,
@@ -127,8 +124,8 @@ CREATE TABLE reservas (
 -- RESERVAS SERVICIOS
 CREATE TABLE reservas_servicio (
     id_reserva   NUMBER NOT NULL,
-    fecha_inicio DATE NOT NULL,
-    fecha_fin    DATE NOT NULL,
+    fecha_inicio VARCHAR2(250) NOT NULL,
+    fecha_fin    VARCHAR2(250) NOT NULL,
     factura_num  NUMBER NOT NULL,
     servicio_id  NUMBER,
     CONSTRAINT reserva_servicio_pk PRIMARY KEY ( id_reserva )
@@ -147,7 +144,7 @@ CREATE TABLE salones_eventos (
     id        NUMBER NOT NULL,
     costo     NUMBER NOT NULL,
     capacidad NUMBER NOT NULL,
-    tipo      VARCHAR2(250) NOT NULL,
+    tipo      VARCHAR2(250) NOT NULL CHECK (tipo IN ('conferencia', 'reunion')),
     CONSTRAINT salon_eventos_pk PRIMARY KEY ( id )
 );
 
@@ -155,8 +152,8 @@ CREATE TABLE salones_eventos (
 CREATE TABLE servicios (
     id             NUMBER NOT NULL,
     nombre         VARCHAR2(250) NOT NULL,
-    horario_inicio DATE NOT NULL,
-    horario_cierre DATE NOT NULL,
+    horario_inicio VARCHAR2(250) NOT NULL,
+    horario_cierre VARCHAR2(250) NOT NULL,
     hotel_nit      NUMBER NOT NULL,
     CONSTRAINT servicio_pk PRIMARY KEY ( id )
 );
@@ -186,7 +183,7 @@ CREATE TABLE usuarios (
     apellido         VARCHAR2(250) NOT NULL,
     usuario_login    VARCHAR2(250) NOT NULL,
     clave_login      VARCHAR2(250) NOT NULL,
-    tipo_usuario     VARCHAR2(250) NOT NULL,
+    tipo_usuario     VARCHAR2(250) NOT NULL CHECK (tipo_usuario IN ('administrador', 'empleado', 'recepcionista', 'gerente')),
     hotel_nit        NUMBER NOT NULL,
     CONSTRAINT usuario_pk PRIMARY KEY ( cedula )
 );
@@ -198,7 +195,6 @@ CREATE TABLE utensilios (
     costo  NUMBER NOT NULL,
     CONSTRAINT utensillo_pk PRIMARY KEY ( id )
 );
--- ALTER TABLE factura DISABLE CONSTRAINT factura_reserva_fk;
 
 -- ESTABLECIMIENTOS
 ALTER TABLE establecimientos
