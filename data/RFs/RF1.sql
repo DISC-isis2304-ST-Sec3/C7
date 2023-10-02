@@ -6,8 +6,8 @@ SET tipo_usuario = 'nuevo_tipo_usuario'
 WHERE cedula = valor_de_cedula;
 
 UPDATE Usuarios
-SET tipo_usuario = 'Empleado'
-WHERE cedula = 5;
+SET tipo_usuario = 'empleado'
+WHERE cedula = 4;
 
 --Eliminar
 

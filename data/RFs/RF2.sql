@@ -3,7 +3,7 @@ INSERT INTO Usuarios (cedula, nombre, apellido,usuario_login, clave_login, tipo_
         VALUES (nueva_cedula, nuevo_nombre, nuevo_apellido,nuevo_usuario_login,nuevo_clave_login, nuevo_tipo_usuario,hotel_NIT);
 
 INSERT INTO Usuarios (cedula, nombre, apellido,usuario_login, clave_login, tipo_usuario,hotel_NIT)
-        VALUES (8, 'pedro', 'murillo', 'holausuario','holacontra','Administrador',104);
+        VALUES (8, 'pedro', 'murillo', 'holausuario','holacontra','administrador',104);
 
 --Actualizar
 
@@ -20,11 +20,11 @@ WHERE cedula = valor_cedula_actual;
 UPDATE Usuarios
 SET nombre = 'nombrenuevo', 
     apellido = 'nuevoapellido', 
-    usuario_login='nuevousuario123'
-    clave_login='nuevoclavelogin1244'
-    tipo_usuario = 'empleado'
+    usuario_login='nuevousuario123',
+    clave_login='nuevoclavelogin1244',
+    tipo_usuario = 'empleado',
     hotel_NIT=104
-WHERE cedula = 3;
+WHERE cedula = 4;
 
 --Eliminar
 
