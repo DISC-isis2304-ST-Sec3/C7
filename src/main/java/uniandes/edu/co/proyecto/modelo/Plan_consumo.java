@@ -2,6 +2,8 @@ package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -12,9 +14,12 @@ public class Plan_consumo {
     private Integer id_plan;
     private String nombre;
     private Integer descuento;
-    private Integer hotel_nit;
 
-    public Plan_consumo(Integer id_plan, String nombre, Integer descuento, Integer hotel_nit) {
+    @ManyToOne
+    @JoinColumn(name = "hotel_nit" , referencedColumnName = "nit")
+    private Hotel hotel_nit;
+    
+    public Plan_consumo(Integer id_plan, String nombre, Integer descuento, Hotel hotel_nit) {
         this.id_plan = id_plan;
         this.nombre = nombre;
         this.descuento = descuento;
@@ -31,7 +36,7 @@ public class Plan_consumo {
     public Integer getDescuento() {
         return descuento;
     }
-    public Integer getHotel_nit() {
+    public Hotel getHotel_nit() {
         return hotel_nit;
     }
     public void setId_plan(Integer id_plan) {
@@ -43,7 +48,7 @@ public class Plan_consumo {
     public void setDescuento(Integer descuento) {
         this.descuento = descuento;
     }
-    public void setHotel_nit(Integer hotel_nit) {
+    public void setHotel_nit(Hotel hotel_nit) {
         this.hotel_nit = hotel_nit;
     }
     

@@ -1,36 +1,30 @@
 package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "INTERNETS")
+@PrimaryKeyJoinColumn(name = "id")
 
-public class Internet {
-    @Id
-    private Integer id;
+public class Internet extends Servicio {
+
     private Integer capacidad;
     private Integer precio_noche;
     
-    public Internet(Integer id, Integer capacidad, Integer precio_noche) {
-        this.id = id;
+    public Internet(Integer id, String nombre, String horario_inicio, String horario_cierre, Hotel hotel_nit,Integer capacidad, Integer precio_noche) {
+        super(id, nombre, horario_inicio, horario_cierre, hotel_nit);
         this.capacidad = capacidad;
         this.precio_noche = precio_noche;
     }
     public Internet()
     {;}
-    public Integer getId() {
-        return id;
-    }
     public Integer getCapacidad() {
         return capacidad;
     }
     public Integer getPrecio_noche() {
         return precio_noche;
-    }
-    public void setId(Integer id) {
-        this.id = id;
     }
     public void setCapacidad(Integer capacidad) {
         this.capacidad = capacidad;

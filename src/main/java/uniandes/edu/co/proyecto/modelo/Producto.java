@@ -2,6 +2,8 @@ package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -12,10 +14,14 @@ public class Producto {
     private Integer id_producto;
     private String nombre;
     private Integer costo;
-    private Integer establecimiento_id;
-    private Integer restaurante_id;
     
-    public Producto(Integer id_producto, String nombre, Integer costo, Integer establecimiento_id, Integer restaurante_id) {
+    @ManyToOne
+    @JoinColumn(name = "establecimiento_id" , referencedColumnName = "id")
+    private Establecimiento establecimiento_id;
+    @JoinColumn(name = "restaurante_id" , referencedColumnName = "id")
+    private Restaurante restaurante_id;
+    
+    public Producto(Integer id_producto, String nombre, Integer costo, Establecimiento establecimiento_id, Restaurante restaurante_id) {
         this.id_producto = id_producto;
         this.nombre = nombre;
         this.costo = costo;
@@ -33,10 +39,10 @@ public class Producto {
     public Integer getCosto() {
         return costo;
     }
-    public Integer getEstablecimiento_id() {
+    public Establecimiento getEstablecimiento_id() {
         return establecimiento_id;
     }
-    public Integer getRestaurante_id() {
+    public Restaurante getRestaurante_id() {
         return restaurante_id;
     }
     public void setId_producto(Integer id_producto) {
@@ -48,10 +54,10 @@ public class Producto {
     public void setCosto(Integer costo) {
         this.costo = costo;
     }
-    public void setEstablecimiento_id(Integer establecimiento_id) {
+    public void setEstablecimiento_id(Establecimiento establecimiento_id) {
         this.establecimiento_id = establecimiento_id;
     }
-    public void setRestaurante_id(Integer restaurante_id) {
+    public void setRestaurante_id(Restaurante restaurante_id) {
         this.restaurante_id = restaurante_id;
     }
     

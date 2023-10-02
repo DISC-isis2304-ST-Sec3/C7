@@ -2,6 +2,8 @@ package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -13,9 +15,13 @@ public class Servicio{
     private String nombre;
     private String horario_inicio;
     private String horario_cierre;
-    private Integer hotel_nit;
+        
+    @ManyToOne
+    @JoinColumn(name = "hotel_nit" , referencedColumnName = "nit")
+    private Hotel hotel_nit;
+    
 
-    public Servicio(Integer id, String nombre, String horario_inicio, String horario_cierre, Integer hotel_nit) {
+    public Servicio(Integer id, String nombre, String horario_inicio, String horario_cierre, Hotel hotel_nit) {
         this.id = id;
         this.nombre = nombre;
         this.horario_inicio = horario_inicio;
@@ -48,10 +54,10 @@ public class Servicio{
     public void setHorario_cierre(String horario_cierre) {
         this.horario_cierre = horario_cierre;
     }
-    public Integer getHotel_nit() {
+    public Hotel getHotel_nit() {
         return hotel_nit;
     }
-    public void setHotel_nit(Integer hotel_nit) {
+    public void setHotel_nit(Hotel hotel_nit) {
         this.hotel_nit = hotel_nit;
     }
     

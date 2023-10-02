@@ -2,6 +2,8 @@ package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -15,9 +17,12 @@ public class Usuario {
     private String usuario_login;
     private String clave_login;
     private String tipo_usuario;
-    private Integer hotel_nit;
-    
-    public Usuario(Integer cedula, String nombre, String apellido, String usuario_login, String clave_login, String tipo_usuario, Integer hotel_nit){
+        
+    @ManyToOne
+    @JoinColumn(name = "hotel_nit" , referencedColumnName = "nit")
+    private Hotel hotel_nit;
+
+    public Usuario(Integer cedula, String nombre, String apellido, String usuario_login, String clave_login, String tipo_usuario, Hotel hotel_nit){
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -64,10 +69,10 @@ public class Usuario {
     public void setTipo_usuario(String tipo_usuario) {
         this.tipo_usuario = tipo_usuario;
     }
-    public Integer getHotel_nit() {
+    public Hotel getHotel_nit() {
         return hotel_nit;
     }
-    public void setHotel_nit(Integer hotel_nit) {
+    public void setHotel_nit(Hotel hotel_nit) {
         this.hotel_nit = hotel_nit;
     }
 

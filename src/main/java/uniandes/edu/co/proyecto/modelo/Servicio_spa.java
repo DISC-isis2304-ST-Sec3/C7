@@ -2,6 +2,8 @@ package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -13,9 +15,12 @@ public class Servicio_spa {
     private String servicios;
     private Integer duracion;
     private Integer costo;
-    private Integer spa_id;
     
-    public Servicio_spa(Integer id_serv_spa, String servicios, Integer duracion, Integer costo, Integer spa_id) {
+    @ManyToOne
+    @JoinColumn(name = "spa_id" , referencedColumnName = "id")
+    private Spa spa_id;
+    
+    public Servicio_spa(Integer id_serv_spa, String servicios, Integer duracion, Integer costo, Spa spa_id) {
         this.id_serv_spa = id_serv_spa;
         this.servicios = servicios;
         this.duracion = duracion;
@@ -48,10 +53,10 @@ public class Servicio_spa {
     public void setCosto(Integer costo) {
         this.costo = costo;
     }
-    public Integer getSpa_id() {
+    public Spa getSpa_id() {
         return spa_id;
     }
-    public void setSpa_id(Integer spa_id) {
+    public void setSpa_id(Spa spa_id) {
         this.spa_id = spa_id;
     }
     

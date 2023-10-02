@@ -2,6 +2,8 @@ package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -14,10 +16,15 @@ public class Reserva {
     private String fecha_entrada;
     private String fecha_salida;
     private Integer num_personas;
-    private Integer clientes_cedula;
-    private Integer factura_num;
+    
+    @ManyToOne
+    @JoinColumn(name = "clientes_cedula", referencedColumnName = "cedula_cliente")
+    private Cliente clientes_cedula ;
+    @JoinColumn(name = "factura_num" , referencedColumnName = "num_factura")
+    private Factura factura_num;
 
-    public Reserva(Integer id_reserva, String fecha_entrada, String fecha_salida, Integer num_personas, Integer clientes_cedula, Integer factura_num) {
+
+    public Reserva(Integer id_reserva, String fecha_entrada, String fecha_salida, Integer num_personas, Cliente clientes_cedula, Factura factura_num) {
         this.id_reserva = id_reserva;
         this.fecha_entrada = fecha_entrada;
         this.fecha_salida = fecha_salida;
@@ -51,16 +58,16 @@ public class Reserva {
     public void setNum_personas(Integer num_personas) {
         this.num_personas = num_personas;
     }
-    public Integer getClientes_cedula() {
+    public Cliente getClientes_cedula() {
         return clientes_cedula;
     }
-    public void setClientes_cedula(Integer clientes_cedula) {
+    public void setClientes_cedula(Cliente clientes_cedula) {
         this.clientes_cedula = clientes_cedula;
     }
-    public Integer getFactura_num() {
+    public Factura getFactura_num() {
         return factura_num;
     }
-    public void setFactura_num(Integer factura_num) {
+    public void setFactura_num(Factura factura_num) {
         this.factura_num = factura_num;
     }
     

@@ -2,6 +2,8 @@ package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,10 +22,15 @@ public class Habitacion {
     private String comedor;
     private String cocina;
     private String jacuzzi;
-    private String reserva_id;
-    private Integer hotel_nit;
 
-    public Habitacion(Integer id_habitacion, String tipo_habitacion, Integer capacidad, Integer costo_noche, String television, String minibar, String cafetera, String comedor, String cocina, String jacuzzi, String reserva_id, Integer hotel_nit) {
+    @ManyToOne
+    @JoinColumn(name = "reserva_id", referencedColumnName = "id_reserva")
+    private Reserva reserva_id;
+    @JoinColumn(name = "hotel_nit" , referencedColumnName = "nit")
+    private Hotel hotel_nit;
+
+
+    public Habitacion(Integer id_habitacion, String tipo_habitacion, Integer capacidad, Integer costo_noche, String television, String minibar, String cafetera, String comedor, String cocina, String jacuzzi, Reserva reserva_id, Hotel hotel_nit) {
         this.id_habitacion = id_habitacion;
         this.tipo_habitacion = tipo_habitacion;
         this.capacidad = capacidad;
@@ -37,7 +44,7 @@ public class Habitacion {
         this.reserva_id = reserva_id;
         this.hotel_nit = hotel_nit;
     }
-
+   
     public Integer getId_habitacion() {
         return id_habitacion;
     }
@@ -78,11 +85,11 @@ public class Habitacion {
         return jacuzzi;
     }
 
-    public String getReserva_id() {
+    public Reserva getReserva_id() {
         return reserva_id;
     }
 
-    public Integer getHotel_nit() {
+    public Hotel getHotel_nit() {
         return hotel_nit;
     }
 
@@ -126,11 +133,11 @@ public class Habitacion {
         this.jacuzzi = jacuzzi;
     }
 
-    public void setReserva_id(String reserva_id) {
+    public void setReserva_id(Reserva reserva_id) {
         this.reserva_id = reserva_id;
     }
 
-    public void setHotel_nit(Integer hotel_nit) {
+    public void setHotel_nit(Hotel hotel_nit) {
         this.hotel_nit = hotel_nit;
     }
     
