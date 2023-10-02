@@ -1,7 +1,7 @@
 --Registrar
 
 INSERT INTO Planes_consumo (id_plan, nombre, descuento, hotel_NIT)
-        VALUES (id_plan_a_registrar, NuevoNombre, valor_Descuento, hotel_nit);
+        VALUES (id_plan_a_registrar, 'NuevoNombre', valor_Descuento, hotel_nit);
 
 INSERT INTO Planes_consumo (id_plan, nombre, descuento, hotel_NIT)
         VALUES (6, 'nuevoPlanjej', 10, 104);

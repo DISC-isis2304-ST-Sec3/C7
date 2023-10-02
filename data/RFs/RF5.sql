@@ -1,24 +1,24 @@
 --Instertar
 
 INSERT INTO Servicios (id, nombre, horario_inicio, horario_cierre, hotel_NIT)
-VALUES (id, 'nombre_servicio', TO_DATE('fecha', 'YYYY-MM-DD'), TO_DATE('fecha', 'YYYY-MM-DD'), hotel_NIT);
+VALUES (id, 'nombre_servicio', 'horario_inicio', 'horario_cierre', hotel_NIT);
 
 INSERT INTO Servicios (id, nombre, horario_inicio, horario_cierre, hotel_NIT)
-VALUES (22, 'Servicio A', TO_DATE('2023-10-01', 'YYYY-MM-DD'), TO_DATE('2023-10-03', 'YYYY-MM-DD'), 104);
+VALUES (22, 'Servicio A', '7:00', '4:00', 104);
 
 --Actualizar
 
 UPDATE Servicios
 SET nombre = 'NuevoNombreServicio', 
-    horario_inicio = TO_DATE('fecha', 'YYYY-MM-DD'), 
-    horario_cierre = TO_DATE('fecha', 'YYYY-MM-DD'), 
+    horario_inicio = 'horario_inicio', 
+    horario_cierre = 'horario_cierre', 
     hotel_NIT = 'NuevoNITHotel'
 WHERE id = id_Servicio_a_actualizar;
 
 UPDATE Servicios
 SET nombre = 'Serivico abc', 
-    horario_inicio = TO_DATE('2023-11-01', 'YYYY-MM-DD'), 
-    horario_cierre = TO_DATE('2023-12-04', 'YYYY-MM-DD'), 
+    horario_inicio = '8:00', 
+    horario_cierre = '22:00', 
     hotel_NIT = 104
 WHERE id = 5;
 

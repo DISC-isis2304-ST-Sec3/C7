@@ -1,9 +1,9 @@
 --registrar
-INSERT INTO Usuarios (cedula, nombre, apellido, tipo_usuario)
-        VALUES (nueva_cedula, nuevo_nombre, nuevo_apellido, nuevo_tipo_usuario);
+INSERT INTO Usuarios (cedula, nombre, apellido,usuario_login, clave_login, tipo_usuario,hotel_NIT)
+        VALUES (nueva_cedula, nuevo_nombre, nuevo_apellido,nuevo_usuario_login,nuevo_clave_login, nuevo_tipo_usuario,hotel_NIT);
 
-INSERT INTO Usuarios (cedula, nombre, apellido, tipo_usuario)
-        VALUES (8, 'pedro', 'murillo', 'Administrador');
+INSERT INTO Usuarios (cedula, nombre, apellido,usuario_login, clave_login, tipo_usuario,hotel_NIT)
+        VALUES (8, 'pedro', 'murillo', 'holausuario','holacontra','Administrador',104);
 
 --Actualizar
 
@@ -11,15 +11,20 @@ UPDATE Usuarios
 SET cedula = nueva_cedula, 
     nombre = 'nuevo_nombre', 
     apellido = 'nuevo_apellido', 
+    usuario_login='nuevo_usuario_login'
+    clave_login='nuevo_clave_login'
     tipo_usuario = 'nuevo_tipo_usuario'
+    hotel_NIT='hotel_NIT'
 WHERE cedula = valor_cedula_actual;
 
 UPDATE Usuarios
-SET cedula = 6, 
-    nombre = 'nombrenuevo', 
+SET nombre = 'nombrenuevo', 
     apellido = 'nuevoapellido', 
-    tipo_usuario = 'gerente'
-WHERE cedula = 5;
+    usuario_login='nuevousuario123'
+    clave_login='nuevoclavelogin1244'
+    tipo_usuario = 'empleado'
+    hotel_NIT=104
+WHERE cedula = 3;
 
 --Eliminar
 

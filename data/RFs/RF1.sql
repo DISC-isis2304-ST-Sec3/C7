@@ -11,13 +11,12 @@ WHERE cedula = 5;
 
 --Eliminar
 
-UPDATE Usuarios
-SET tipo_usuario = 'nuevo_tipo_usuario'
-WHERE cedula = valor_de_cedula;
+DELETE FROM Usuarios
+WHERE tipo_usuario = 'tipo_usuario';
 
-UPDATE Usuarios
-SET tipo_usuario = 'null'
-WHERE cedula = 2 ;
+
+DELETE FROM Usuarios
+WHERE tipo_usuario = 'empleado';
 
 --Consultar
 
