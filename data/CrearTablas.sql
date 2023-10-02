@@ -127,7 +127,7 @@ CREATE TABLE reservas_servicio (
     fecha_inicio VARCHAR2(250) NOT NULL,
     fecha_fin    VARCHAR2(250) NOT NULL,
     factura_num  NUMBER NOT NULL,
-    servicio_id  NUMBER,
+    servicio_id  NUMBER NOT NULL,
     CONSTRAINT reserva_servicio_pk PRIMARY KEY ( id_reserva )
 );
 
