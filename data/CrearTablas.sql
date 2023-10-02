@@ -201,14 +201,6 @@ ALTER TABLE establecimientos
     ADD CONSTRAINT establecimiento_servicio_fk FOREIGN KEY ( id )
         REFERENCES servicios ( id );
 
-ALTER TABLE facturas
-    ADD CONSTRAINT factura_reserva_fk FOREIGN KEY ( reserva_id )
-        REFERENCES reservas ( id_reserva );
-
-ALTER TABLE facturas
-    ADD CONSTRAINT factura_reserva_servicio_fk FOREIGN KEY ( reserva_servicio_id )
-        REFERENCES reservas_servicio ( id_reserva );
-
 ALTER TABLE gimnasios
     ADD CONSTRAINT gimnasio_servicio_fk FOREIGN KEY ( id )
         REFERENCES servicios ( id );
