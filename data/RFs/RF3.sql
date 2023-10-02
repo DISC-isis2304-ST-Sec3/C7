@@ -10,13 +10,12 @@ WHERE id_habitacion = 303;
 
 --Eliminar
 
-UPDATE Habitaciones
-SET tipo_habitacion = 'NuevoTipoHabitacion'
-WHERE id_habitacion = id_habitacion_a_eliminar;
+DELETE FROM Habitaciones
+WHERE tipo_habitacion = 'tipo_habitacion';
 
-UPDATE Habitaciones
-SET tipo_habitacion = 'nullo'
-WHERE id_habitacion = 303;
+DELETE FROM Habitaciones
+WHERE tipo_habitacion = 'suite';
+
 
 --Consultar#
 

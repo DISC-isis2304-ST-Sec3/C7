@@ -1,19 +1,19 @@
 --registrar
 
 INSERT INTO Habitaciones (
-            id_habitacion, tipo_habitacion, capacidad, costonoche,
+            id_habitacion, tipo_habitacion, capacidad, costo_noche,
             television, minibar, cafetera, comedor, cocina, jacuzzi,
             Reserva_id, Hotel_nit)
-VALUES (id_habitacion_a_registar, NuevoTipoHabitacion, NuevaCapacidad,
-            NuevoCostoNoche, NuevaTelevision, NuevoMinibar, NuevaCafetera,
-            NuevoComedor, NuevaCocina, NuevoJacuzzi, NuevoReservaID, NuevoNITHotel);
+VALUES (id_habitacion_a_registar, 'NuevoTipoHabitacion', NuevaCapacidad,
+            NuevoCosto_Noche, 'NuevaTelevision', 'NuevoMinibar', 'NuevaCafetera',
+            'NuevoComedor', 'NuevaCocina', 'NuevoJacuzzi', NuevoReservaID, NuevoNITHotel);
 
 INSERT INTO Habitaciones (
-            id_habitacion, tipo_habitacion, capacidad, costonoche,
+            id_habitacion, tipo_habitacion, capacidad, costo_noche,
             television, minibar, cafetera, comedor, cocina, jacuzzi,
             Reserva_id, Hotel_nit)
 VALUES (307, 'suite', 10,
-            'true', 'true', 'true', 'true',
+            1000, 'true', 'true', 'true',
             'false', 'true', 'false', 001, 104);
 
 
@@ -23,7 +23,7 @@ VALUES (307, 'suite', 10,
 UPDATE Habitaciones
 SET tipo_habitacion = 'NuevoTipoHabitacion',
     capacidad = NuevaCapacidad,
-    costonoche = NuevoCostoNoche,
+    costo_noche = NuevoCosto_Noche,
     television = 'NuevaTelevision',
     minibar = 'NuevoMinibar',
     cafetera = 'NuevaCafetera',
@@ -37,7 +37,7 @@ WHERE id_habitacion = id_habitacion_a_actualizar;
 UPDATE Habitaciones
 SET tipo_habitacion = 'suite',
     capacidad = 10,
-    costonoche = 1000,
+    costo_noche = 1000,
     television = 'ture',
     minibar = 'true',
     cafetera = 'false',
