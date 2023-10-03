@@ -190,9 +190,9 @@ CREATE TABLE usuarios (
 
 -- UTENSILIOS
 CREATE TABLE utensilios (
-    id     NUMBER NOT NULL,
-    nombre VARCHAR2(250) NOT NULL,
-    costo  NUMBER NOT NULL,
+    id       NUMBER NOT NULL,
+    nombre_u VARCHAR2(250) NOT NULL,
+    costo    NUMBER NOT NULL,
     CONSTRAINT utensillo_pk PRIMARY KEY ( id )
 );
 

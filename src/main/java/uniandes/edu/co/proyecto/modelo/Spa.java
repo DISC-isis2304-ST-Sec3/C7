@@ -1,31 +1,27 @@
 package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "SPAS")
+@PrimaryKeyJoinColumn(name = "id")
 
-public class Spa {
-    @Id
-    private Integer id;
+public class Spa extends Servicio{
+
     private Integer capacidad;
     private Integer calificacion;
 
-    public Spa(Integer id, Integer capacidad, Integer calificacion) {
-        this.id = id;
+    public Spa(Integer id, String nombre, String horario_inicio, String horario_cierre, Hotel hotel_nit, Integer capacidad, Integer calificacion) {
+        super(id, nombre, horario_inicio, horario_cierre, hotel_nit);
         this.capacidad = capacidad;
         this.calificacion = calificacion;
     }
+
     public Spa()
     {;}
-    public Integer getId() {
-        return id;
-    }
-    public void setId(Integer id) {
-        this.id = id;
-    }
+
     public Integer getCapacidad() {
         return capacidad;
     }
