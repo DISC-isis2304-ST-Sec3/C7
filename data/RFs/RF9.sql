@@ -32,4 +32,4 @@ END;
 -- Consultar la fecha de llegada de un cliente al hotel
 SELECT fecha_entrada
 FROM Reserva
-WHERE cliente_cedula = 123456;
+WHERE cliente_cedula = numero_cedula;

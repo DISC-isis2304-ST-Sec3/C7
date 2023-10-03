@@ -31,5 +31,5 @@ END;
 -- Consultar la fecha de salida de un cliente del hotel
 SELECT fecha_salida
 FROM Reserva
-WHERE cliente_cedula = 234567;
+WHERE cliente_cedula = numero_cedula;
 
