@@ -1,11 +1,35 @@
-SELECT CLIENTES_CEDULA, FECHA_ENTRADA
-FROM RESERVAS
-WHERE CLIENTES_CEDULA = 1;
+-- Registrar la llegada de un cliente al hotel
+DECLARE
+   numero_cedula NUMERIC := 123456; -- El número de cédula del cliente
+   nueva_fecha_entrada DATE := '2023-10-01'; -- Nueva fecha de entrada
+BEGIN
+   UPDATE Reserva
+   SET fecha_entrada = nueva_fecha_entrada
+   WHERE cliente_cedula = numero_cedula
+   AND fecha_entrada IS NULL; -- Esto asegura que solo se actualice si la fecha de entrada aún no está establecida
+END;
 
-UPDATE RESERVAS
-SET FECHA_ENTRADA = TO_DATE('2030-01-01', 'YYYY-MM-DD')
-WHERE CLIENTES_CEDULA = 1;
+-- Actualizar la fecha de llegada de un cliente al hotel
+DECLARE
+   numero_cedula NUMERIC := 123456; -- El número de cédula del cliente
+   nueva_fecha_entrada DATE := '2023-11-01'; -- Nueva fecha de llegada
+BEGIN
+   UPDATE Reserva
+   SET fecha_entrada = nueva_fecha_entrada
+   WHERE cliente_cedula = numero_cedula;
+END;
 
-DELETE
-FROM RESERVAS
-WHERE FECHA_ENTRADA < TO_DATE('2040-12-31', 'YYYY-MM-DD');
+-- Borrar la fecha de llegada de un cliente al hotel
+DECLARE
+   numero_cedula NUMERIC := 123456; -- El número de cédula del cliente
+BEGIN
+   UPDATE Reserva
+   SET fecha_entrada = "null"
+   WHERE cliente_cedula = numero_cedula;
+END;
+
+
+-- Consultar la fecha de llegada de un cliente al hotel
+SELECT fecha_entrada
+FROM Reserva
+WHERE cliente_cedula = 123456;
