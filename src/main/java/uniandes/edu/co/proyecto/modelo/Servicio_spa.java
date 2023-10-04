@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class Servicio_spa {
     @Id
     private Integer id_serv_spa;
-    private String servicios;
+    private String servicio;
     private Integer duracion;
     private Integer costo;
     
@@ -20,9 +20,9 @@ public class Servicio_spa {
     @JoinColumn(name = "spa_id" , referencedColumnName = "id")
     private Spa spa_id;
     
-    public Servicio_spa(Integer id_serv_spa, String servicios, Integer duracion, Integer costo, Spa spa_id) {
+    public Servicio_spa(Integer id_serv_spa, String servicio, Integer duracion, Integer costo, Spa spa_id) {
         this.id_serv_spa = id_serv_spa;
-        this.servicios = servicios;
+        this.servicio = servicio;
         this.duracion = duracion;
         this.costo = costo;
         this.spa_id = spa_id;
@@ -35,11 +35,11 @@ public class Servicio_spa {
     public void setId_serv_spa(Integer id_serv_spa) {
         this.id_serv_spa = id_serv_spa;
     }
-    public String getServicios() {
-        return servicios;
+    public String getServicio() {
+        return servicio;
     }
-    public void setServicios(String servicios) {
-        this.servicios = servicios;
+    public void setServicio(String servicio) {
+        this.servicio = servicio;
     }
     public Integer getDuracion() {
         return duracion;

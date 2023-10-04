@@ -1,13 +1,10 @@
 package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "SPAS")
-@PrimaryKeyJoinColumn(name = "id")
-
 public class Spa extends Servicio{
 
     private Integer capacidad;

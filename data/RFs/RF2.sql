@@ -11,9 +11,9 @@ UPDATE Usuarios
 SET cedula = nueva_cedula, 
     nombre = 'nuevo_nombre', 
     apellido = 'nuevo_apellido', 
-    usuario_login='nuevo_usuario_login'
-    clave_login='nuevo_clave_login'
-    tipo_usuario = 'nuevo_tipo_usuario'
+    usuario_login='nuevo_usuario_login',
+    clave_login='nuevo_clave_login',
+    tipo_usuario = 'nuevo_tipo_usuario',
     hotel_NIT='hotel_NIT'
 WHERE cedula = valor_cedula_actual;
 
