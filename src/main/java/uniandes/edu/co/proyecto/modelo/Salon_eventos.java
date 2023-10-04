@@ -1,12 +1,10 @@
 package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "SALONES_EVENTOS")   
-@PrimaryKeyJoinColumn(name = "id")
 
 public class Salon_eventos extends Servicio{
     private Integer costo;

@@ -28,7 +28,8 @@ INSERT INTO servicios (id, nombre, horario_inicio, horario_cierre, hotel_nit) VA
 INSERT INTO servicios (id, nombre, horario_inicio, horario_cierre, hotel_nit) VALUES (17, 'lavado', '08:00', '22:00', 104);
 INSERT INTO servicios (id, nombre, horario_inicio, horario_cierre, hotel_nit) VALUES (18, 'planchado', '08:00', '22:00', 104);
 INSERT INTO servicios (id, nombre, horario_inicio, horario_cierre, hotel_nit) VALUES (20, 'embolado', '08:00', '22:00', 104);
-
+INSERT INTO servicios (id, nombre, horario_inicio, horario_cierre, hotel_nit) VALUES (21, 'tijeras', '08:00', '22:00', 104);
+INSERT INTO servicios (id, nombre, horario_inicio, horario_cierre, hotel_nit) VALUES (22, 'toallas', '08:00', '22:00', 104);
 -- Poblar la tabla 'establecimientos'
 INSERT INTO establecimientos (id, tipo, categoria) VALUES (6, 'supermercado', '');
 INSERT INTO establecimientos (id, tipo, categoria) VALUES (7, 'tienda', 'moda');
@@ -113,10 +114,8 @@ INSERT INTO usuarios (cedula, nombre, apellido, usuario_login, clave_login, tipo
 INSERT INTO usuarios (cedula, nombre, apellido, usuario_login, clave_login, tipo_usuario, hotel_nit) VALUES (5, 'Daniel', 'Alvarado', 'gerente1', '1234', 'gerente', 104);
 
 -- Poblar la tabla 'utensilios'
-INSERT INTO utensilios (id, nombre, costo) VALUES (1, 'Tijeras', 5);
-INSERT INTO utensilios (id, nombre, costo) VALUES (2, 'Toalla', 10);
-INSERT INTO utensilios (id, nombre, costo) VALUES (3, 'Sabanas', 15);
-INSERT INTO utensilios (id, nombre, costo) VALUES (4, 'Secadora cabello', 40);
+INSERT INTO utensilios (id, nombre_u, costo) VALUES (21, 'Tijeras', 5);
+INSERT INTO utensilios (id, nombre_u, costo) VALUES (22, 'Toalla', 10);
 
 -- Poblar la tabla 'maquinas'
 INSERT INTO maquinas (nombre_maquina, codigo_maquina, gimnasio_id) VALUES ('Caminadora', 101, 1);

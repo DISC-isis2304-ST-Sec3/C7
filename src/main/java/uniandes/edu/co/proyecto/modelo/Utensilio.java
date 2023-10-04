@@ -1,12 +1,10 @@
 package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "UTENSILIOS")
-@PrimaryKeyJoinColumn(name = "id")
 
 public class Utensilio extends Servicio{
     private String nombre_u;

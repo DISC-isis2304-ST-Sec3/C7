@@ -6,9 +6,10 @@ SET tipo_usuario = 'nuevo_tipo_usuario'
 WHERE cedula = valor_de_cedula;
 
 UPDATE Usuarios
-SET tipo_usuario = 'empleado'
+SET tipo_usuario = 'gerente'
 WHERE cedula = 4;
 
+select * from usuarios;
 --Eliminar
 
 DELETE FROM Usuarios
@@ -26,4 +27,4 @@ WHERE cedula = valor_de_cedula;
 
 SELECT tipo_usuario
 FROM Usuarios
-WHERE cedula = 4;
+WHERE cedula = 1;

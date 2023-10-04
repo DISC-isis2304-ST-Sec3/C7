@@ -10,8 +10,9 @@ import jakarta.persistence.Table;
 @Table(name = "MAQUINAS")
 
 public class Maquina {
-    @Id
+   
     private String nombre_maquina;
+    @Id
     private Integer codigo_maquina;
         
     @ManyToOne

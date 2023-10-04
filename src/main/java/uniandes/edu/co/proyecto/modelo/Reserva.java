@@ -18,7 +18,7 @@ public class Reserva {
     private Integer num_personas;
     
     @ManyToOne
-    @JoinColumn(name = "clientes_cedula", referencedColumnName = "cedula_cliente")
+    @JoinColumn(name = "clientes_cedula", referencedColumnName = "cedula")
     private Cliente clientes_cedula ;
     @JoinColumn(name = "factura_num" , referencedColumnName = "num_factura")
     private Factura factura_num;
