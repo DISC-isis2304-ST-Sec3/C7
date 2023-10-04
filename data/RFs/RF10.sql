@@ -59,7 +59,7 @@ INNER JOIN Servicio S ON RS.Servicio_id = S.id
 WHERE id_reserva IN (
    SELECT id_reserva
    FROM Reservas
-   WHERE Cliente_cedula = 5678923
+   WHERE Cliente_cedula = cliente_cedula
 );
 
 ------------------
