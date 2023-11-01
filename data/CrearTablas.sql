@@ -174,8 +174,7 @@ CREATE TABLE planes_consumo (
     desc_reserva  NUMBER DEFAULT 0 NOT NULL,
     desc_bar      NUMBER DEFAULT 0 NOT NULL,
     desc_rest     NUMBER DEFAULT 0 NOT NULL,
-    desc_servicio NUMBER DEFAULT 0 NOT NULL,
-    reservas_id   INTEGER NOT NULL
+    desc_servicio NUMBER DEFAULT 0 NOT NULL
 );
 
 ALTER TABLE planes_consumo ADD CHECK ( desc_reserva BETWEEN 0 AND 1 );
@@ -457,7 +456,7 @@ CREATE TABLE usuarios (
 
 ALTER TABLE usuarios ADD CONSTRAINT ck_tipo_documento CHECK ( tipo_documento IN ( 'CC', 'CE', 'CIF', 'TI', 'pasaporte' ) );
 
-ALTER TABLE usuarios ADD CONSTRAINT usuarios_pk PRIMARY KEY ( tipo_documento );
+ALTER TABLE usuarios ADD CONSTRAINT usuarios_pk PRIMARY KEY ( num_documento );
 
 --TABLA UTENSILIOS ---------------------------------------------------------------------------------------------------------------------------
 
@@ -568,10 +567,6 @@ ALTER TABLE ofrecen
 ALTER TABLE piscinas
     ADD CONSTRAINT piscinas_servicios_fk FOREIGN KEY ( servicios_tipo )
         REFERENCES servicios ( tipo );
-
-ALTER TABLE planes_consumo
-    ADD CONSTRAINT planesconsumo_reservas_fk FOREIGN KEY ( reservas_id )
-        REFERENCES reservas ( id );
 
 ALTER TABLE prestan
     ADD CONSTRAINT presta_serviciosprestamo_fk FOREIGN KEY ( serviciosprestamo_id )
