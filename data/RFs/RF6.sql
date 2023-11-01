@@ -6,6 +6,7 @@ INSERT INTO Planes_consumo (id_plan, nombre, descuento, hotel_NIT)
 INSERT INTO Planes_consumo (id_plan, nombre, descuento, hotel_NIT)
         VALUES (6, 'nuevoPlanjej', 10, 104);
 
+select * from planes_consumo;
 --Actualizar
 
 UPDATE Planes_consumo

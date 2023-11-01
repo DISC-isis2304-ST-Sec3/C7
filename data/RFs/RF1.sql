@@ -7,7 +7,7 @@ WHERE cedula = valor_de_cedula;
 
 UPDATE Usuarios
 SET tipo_usuario = 'gerente'
-WHERE cedula = 4;
+WHERE cedula = 5;
 
 select * from usuarios;
 --Eliminar

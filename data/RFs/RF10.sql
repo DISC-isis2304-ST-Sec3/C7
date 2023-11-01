@@ -5,6 +5,7 @@ SELECT 6,'2023-10-01', '2023-10-23', 5, 5
 FROM Reservas
 WHERE ClienteS_cedula = 123456;
 
+select * from reservas_servicio;
 --Actualizar
 
 DECLARE

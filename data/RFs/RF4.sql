@@ -16,7 +16,7 @@ VALUES (307, 'suite', 10,
             1000, 'true', 'true', 'true',
             'false', 'true', 'false', 001, 104);
 
-
+select * from habitaciones;
 
 --Actualizar
 

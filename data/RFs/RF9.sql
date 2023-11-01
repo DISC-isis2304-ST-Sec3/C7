@@ -8,7 +8,7 @@ BEGIN
    WHERE clientes_cedula = numero_cedula
    AND fecha_entrada IS NULL; -- Esto asegura que solo se actualice si la fecha de entrada aún no está establecida
 END;
-
+select * from reservas;
 -- Actualizar la fecha de llegada de un cliente al hotel
 DECLARE
    numero_cedula NUMERIC := 123456; -- El número de cédula del cliente
