@@ -42,7 +42,7 @@ ALTER TABLE checkouts ADD CONSTRAINT checkouts_pk PRIMARY KEY ( reservas_id,
 --TABLA CLIENTES ---------------------------------------------------------------------------------------------------------------------------
 
 CREATE TABLE clientes (
-    tipo_documento INTEGER NOT NULL,
+    tipo_documento VARCHAR2(255 BYTE) NOT NULL,
     num_documento  INTEGER NOT NULL,
     nombre         VARCHAR2(255 BYTE) NOT NULL,
     correo         VARCHAR2(255 BYTE) NOT NULL
@@ -150,7 +150,7 @@ CREATE TABLE ofrecen (
 
 ALTER TABLE ofrecen ADD CONSTRAINT ofrecen_pk PRIMARY KEY ( spas_id,
                                                           serviciosspa_id );
-                                                          
+
 --TABLA PISCINAS ---------------------------------------------------------------------------------------------------------------------------
 
 CREATE TABLE piscinas (
@@ -255,7 +255,7 @@ CREATE TABLE reservas (
     fecha_salida            DATE NOT NULL,
     num_personas            INTEGER NOT NULL,
     planesconsumo_id        INTEGER NOT NULL,
-    usuarios_tipo_documento VARCHAR2(255 BYTE) NOT NULL
+    usuarios_num_documento  INTEGER NOT NULL
 );
 
 ALTER TABLE reservas ADD CHECK ( num_personas BETWEEN 1 AND 100 );
@@ -321,20 +321,8 @@ ALTER TABLE serv_conferencia ADD CONSTRAINT serv_conferencia_pk PRIMARY KEY ( re
 --TABLA SERVICIOS ---------------------------------------------------------------------------------------------------------------------------
 
 CREATE TABLE servicios (
-    tipo                 VARCHAR2(255 BYTE) NOT NULL,
-    descripcion          VARCHAR2(510) NOT NULL,
-    lavanderia_id        INTEGER NOT NULL,
-    internets_id         INTEGER NOT NULL,
-    supermercados_id     INTEGER NOT NULL,
-    piscinas_id          INTEGER NOT NULL,
-    tiendas_id           INTEGER NOT NULL,
-    conferencia_id       INTEGER NOT NULL,
-    reunion_id           INTEGER NOT NULL,
-    spas_id              INTEGER NOT NULL,
-    restaurantes_id      INTEGER NOT NULL,
-    gimnasios_id         INTEGER NOT NULL,
-    bares_id             INTEGER NOT NULL,
-    serviciosprestamo_id INTEGER NOT NULL
+    tipo           VARCHAR2(255 BYTE) NOT NULL,
+    descripcion    VARCHAR2(510) NOT NULL
 );
 
 ALTER TABLE servicios ADD CONSTRAINT ck_tipo_servicio CHECK ( tipo IN ( 'bar', 'gimnasio', 'internet', 'lavadoSecadoEmbolado', 'piscina',
@@ -450,8 +438,7 @@ CREATE TABLE usuarios (
     num_documento     NUMBER NOT NULL,
     nombre            VARCHAR2(255 BYTE) NOT NULL,
     correo            VARCHAR2(255 BYTE) NOT NULL,
-    tiposusuario_tipo VARCHAR2(255 BYTE) NOT NULL,
-    reservas_id       INTEGER NOT NULL
+    tiposusuario_tipo VARCHAR2(255 BYTE) NOT NULL
 );
 
 ALTER TABLE usuarios ADD CONSTRAINT ck_tipo_documento CHECK ( tipo_documento IN ( 'CC', 'CE', 'CIF', 'TI', 'pasaporte' ) );
@@ -499,7 +486,7 @@ ALTER TABLE adicionales
         REFERENCES reuniones ( id );
         
 --CONSTRAINTs ---------------------------------------------------------------------------------------------------------------------------
-        
+
 ALTER TABLE bares
     ADD CONSTRAINT bares_servicios_fk FOREIGN KEY ( servicios_tipo )
         REFERENCES servicios ( tipo );
@@ -589,8 +576,8 @@ ALTER TABLE reservas
         REFERENCES planes_consumo ( id );
 
 ALTER TABLE reservas
-    ADD CONSTRAINT reservas_usuarios_fk FOREIGN KEY ( usuarios_tipo_documento )
-        REFERENCES usuarios ( tipo_documento );
+    ADD CONSTRAINT reservas_usuarios_fk FOREIGN KEY ( usuarios_num_documento )
+        REFERENCES usuarios ( num_documento );
 
 ALTER TABLE reservas_serv
     ADD CONSTRAINT reservaserv_habitacion_fk FOREIGN KEY ( habitacion_id )
@@ -619,54 +606,6 @@ ALTER TABLE serv_conferencia
 ALTER TABLE serv_conferencia
     ADD CONSTRAINT servconferencia_reservaserv_fk FOREIGN KEY ( reservaserv_id )
         REFERENCES reservas_serv ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_bares_fk FOREIGN KEY ( bares_id )
-        REFERENCES bares ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_conferencia_fk FOREIGN KEY ( conferencia_id )
-        REFERENCES conferencias ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_gimnasios_fk FOREIGN KEY ( gimnasios_id )
-        REFERENCES gimnasios ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_internets_fk FOREIGN KEY ( internets_id )
-        REFERENCES internets ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_lavanderia_fk FOREIGN KEY ( lavanderia_id )
-        REFERENCES lavanderias ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_piscinas_fk FOREIGN KEY ( piscinas_id )
-        REFERENCES piscinas ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_restaurantes_fk FOREIGN KEY ( restaurantes_id )
-        REFERENCES restaurantes ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_reunion_fk FOREIGN KEY ( reunion_id )
-        REFERENCES reuniones ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_serviciosprestamo_fk FOREIGN KEY ( serviciosprestamo_id )
-        REFERENCES servicios_prestamo ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_spas_fk FOREIGN KEY ( spas_id )
-        REFERENCES spas ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_supermercados_fk FOREIGN KEY ( supermercados_id )
-        REFERENCES supermercados ( id );
-
-ALTER TABLE servicios
-    ADD CONSTRAINT servicios_tiendas_fk FOREIGN KEY ( tiendas_id )
-        REFERENCES tiendas ( id );
 
 ALTER TABLE servicios_prestamo
     ADD CONSTRAINT serviciosprestamo_servicios_fk FOREIGN KEY ( servicios_tipo )
@@ -707,10 +646,6 @@ ALTER TABLE supermercados
 ALTER TABLE tiendas
     ADD CONSTRAINT tiendas_servicios_fk FOREIGN KEY ( servicios_tipo )
         REFERENCES servicios ( tipo );
-
-ALTER TABLE usuarios
-    ADD CONSTRAINT usuarios_reservas_fk FOREIGN KEY ( reservas_id )
-        REFERENCES reservas ( id );
 
 ALTER TABLE usuarios
     ADD CONSTRAINT usuarios_tiposusuario_fk FOREIGN KEY ( tiposusuario_tipo )
