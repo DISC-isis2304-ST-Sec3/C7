@@ -4,8 +4,9 @@ INSERT INTO Servicios (id, nombre, horario_inicio, horario_cierre, hotel_NIT)
 VALUES (id, 'nombre_servicio', 'horario_inicio', 'horario_cierre', hotel_NIT);
 
 INSERT INTO Servicios (id, nombre, horario_inicio, horario_cierre, hotel_NIT)
-VALUES (22, 'Servicio A', '7:00', '4:00', 104);
+VALUES (23, 'Servicio A', '7:00', '4:00', 104);
 
+select * from servicios;
 --Actualizar
 
 UPDATE Servicios

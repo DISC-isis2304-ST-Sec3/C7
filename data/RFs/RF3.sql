@@ -6,8 +6,8 @@ WHERE id_habitacion = id_habitacion_a_actualizar;
 
 UPDATE Habitaciones
 SET tipo_habitacion = 'doble'
-WHERE id_habitacion = 303;
-
+WHERE id_habitacion = 305;
+select * from habitaciones;
 --Eliminar
 
 DELETE FROM Habitaciones

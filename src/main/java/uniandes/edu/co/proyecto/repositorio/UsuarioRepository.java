@@ -1,42 +1,53 @@
 package uniandes.edu.co.proyecto.repositorio;
+
 import java.util.Collection;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
-import uniandes.edu.co.proyecto.modelo.Usuario;
 
-public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
+import uniandes.edu.co.proyecto.modelo.Tipohab;
+import uniandes.edu.co.proyecto.modelo.TiposUsuario;
+import uniandes.edu.co.proyecto.modelo.Usuarios;
 
-    @Query(value = "SELECT * FROM USUARIOS", nativeQuery = true)
-    Collection<Usuario> darUsuarios();
+public interface UsuarioRepository extends JpaRepository<Usuarios, String> {
 
-    @Query(value = "SELECT * FROM USUARIOS WHERE cedula = :cedula", nativeQuery = true)
-    Usuario darUsuario(@Param("cedula") int cedula);
+    // Obtener todos los usuarios
+    @Query(value = "SELECT * FROM usuarios", nativeQuery = true)
+    Collection<Usuarios> findAllUsuarios();
+
+    // Obtener un usuario por ID
+    @Query(value = "SELECT * FROM usuarios WHERE id = :id", nativeQuery = true)
+    Usuarios findUsuarioById(@Param("id") Long id);
+
+    // Insertar un nuevo usuario
+    @Modifying
+    @Transactional
+    @Query(value = "INSERT INTO usuarios (tipo_documento, num_documento, nombre, correo, tiposusuario_tipo) VALUES (:tipoDocumento, :numDocumento, :nombre, :correo, :tipoUsuarioTipo)", nativeQuery = true)
+    void insertUsuario(@Param("tipoDocumento") int i, @Param("numDocumento") String string, @Param("nombre") String nombre, @Param("correo") String correo, @Param("tipoUsuarioTipo") TiposUsuario tiposUsuario);
+
+    // Actualizar un usuario por ID
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE usuarios SET tipo_documento = :tipoDocumento, num_documento = :numDocumento, nombre = :nombre, correo = :correo, tiposusuario_tipo = :tipoUsuarioTipo WHERE id = :id", nativeQuery = true)
+    void updateUsuario(@Param("id") Long id, @Param("tipoDocumento") String tipoDocumento, @Param("numDocumento") int i, @Param("nombre") String nombre, @Param("correo") String correo, @Param("tipoUsuarioTipo") TiposUsuario tiposUsuario);
+
+    // Eliminar un usuario por ID
+    @Modifying
+    @Transactional
+    @Query(value = "DELETE FROM usuarios WHERE id = :id", nativeQuery = true)
+    void deleteUsuario(@Param("id") Long id);
+
+    //seleccionar tipo
+    @Query(value="SELECT tiposusuario_tipo FROM usuarios WHERE id=:id",nativeQuery=true)
+    void darTipoHabitacion(@Param("id") int id);
+
+    //eliminar, modificar/ insertar tipo de habitacion
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE usuarios SET tiposusuario_tipo = :tiposusuario_tipo WHERE id = :id", nativeQuery = true)
+    void actualizarTipoHabitacion(@Param("id") int id, @Param("tiposusuario_tipo") TiposUsuario tiposUsuarioTipo);
     
-    @Modifying
-    @Transactional
-    @Query(value = "INSERT INTO USUARIOS (cedula, nombre, apellido, usuario_login, clave_login, tipo_usuario) VALUES (:cedula, :nombre, :apellido, :usuario_login, :clave_login, :tipo_usuario)", nativeQuery = true)
-    void insertarUsuario(@Param("cedula") Integer cedula, 
-                        @Param("nombre") String nombre, 
-                        @Param("apellido") String apellido,
-                        @Param("usuario_login") String usuario_login, 
-                        @Param("clave_login") String clave_login,
-                        @Param("tipo_usuario") String tipo_usuario);
-
-    @Modifying
-    @Transactional
-    @Query(value = "UPDATE USUARIOS SET nombre = :nombre, apellido = :apellido, usuario_login = :usuario_login, clave_login = :clave_login, tipo_usuario = :tipo_usuario WHERE cedula = :cedula", nativeQuery = true)
-    void actualizarUsuario(@Param("cedula") int cedula,
-                        @Param("nombre") String nombre, 
-                        @Param("apellido") String apellido,
-                        @Param("usuario_login") String usuario_login, 
-                        @Param("clave_login") String clave_login,
-                        @Param("tipo_usuario") String tipo_usuario);
-
-    @Modifying
-    @Transactional    
-    @Query(value = "DELETE FROM USUARIOS WHERE cedula = :cedula", nativeQuery = true)          
-    void eliminarUsuario(@Param("cedula") int cedula);
 }

@@ -8,6 +8,11 @@ BEGIN
    WHERE clientes_cedula = numero_cedula;
 END;
 
+   UPDATE Reservas
+   SET fecha_salida = '2023-10-90'
+   WHERE clientes_cedula = 234567;
+   
+   select * from reservas;
 -- Actualizar la fecha de salida de un cliente del hotel
 DECLARE
    numero_cedula NUMERIC := 234567; -- El número de cédula del cliente

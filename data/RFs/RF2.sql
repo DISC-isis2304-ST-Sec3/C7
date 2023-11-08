@@ -3,9 +3,11 @@ INSERT INTO Usuarios (cedula, nombre, apellido,usuario_login, clave_login, tipo_
         VALUES (nueva_cedula, nuevo_nombre, nuevo_apellido,nuevo_usuario_login,nuevo_clave_login, nuevo_tipo_usuario,hotel_NIT);
 
 INSERT INTO Usuarios (cedula, nombre, apellido,usuario_login, clave_login, tipo_usuario,hotel_NIT)
-        VALUES (8, 'pedro', 'murillo', 'holausuario','holacontra','administrador',104);
+        VALUES (10, 'pedro', 'murillo', 'holausuario','holacontra','administrador',104);
 
 --Actualizar
+
+select * from usuarios;
 
 UPDATE Usuarios
 SET cedula = nueva_cedula, 
