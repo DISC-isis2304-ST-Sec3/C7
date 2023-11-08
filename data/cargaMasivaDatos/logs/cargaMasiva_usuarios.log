@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 00:21:13 2023
+SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 03:44:33 2023
 Version 21.3.0.0.0
 
 Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
@@ -38,52 +38,10 @@ ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 Registro 3: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 4: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 5: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 6: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
 Registro 7: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 8: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 9: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 10: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 11: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 12: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 13: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 14: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 15: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
 Registro 16: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 17: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 18: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 19: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
 Registro 20: Rechazado - Error en tabla USUARIOS.
@@ -92,40 +50,7 @@ ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 Registro 21: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 22: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 23: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 24: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 25: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 26: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 27: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 28: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 29: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 30: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
 Registro 31: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 32: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 33: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
 Registro 34: Rechazado - Error en tabla USUARIOS.
@@ -140,53 +65,128 @@ ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 Registro 37: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 38: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 39: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 40: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
 Registro 41: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 42: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 43: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 44: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 45: Rechazado - Error en tabla USUARIOS.
-ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
-
-Registro 46: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
 Registro 47: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 48: Rechazado - Error en tabla USUARIOS.
+Registro 54: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 49: Rechazado - Error en tabla USUARIOS.
+Registro 55: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 50: Rechazado - Error en tabla USUARIOS.
+Registro 57: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
-Registro 51: Rechazado - Error en tabla USUARIOS.
+Registro 61: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 63: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 66: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 70: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 76: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 78: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 79: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 81: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 84: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 87: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 88: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 95: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 100: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 109: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 126: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 127: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 129: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 130: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 132: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 136: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 141: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 145: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 146: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 148: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 150: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 153: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 157: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 162: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 164: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 165: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 169: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 170: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 171: Rechazado - Error en tabla USUARIOS.
+ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
+
+Registro 173: Rechazado - Error en tabla USUARIOS.
 ORA-00001: restricción única (ISIS2304C15202320.USUARIOS_PK) violada
 
 
 MÁXIMO DE ERRORES EXCEDIDO - Las estadísticas anteriores reflejan una ejecución parcial.
 
 Tabla USUARIOS:
-  0 Filas cargadas correctamente.
+  122 Filas cargadas correctamente.
   51 Filas no cargadas debido a errores de datos.
   0 Filas no cargadas porque todas las cláusulas WHEN han fallado.
   0 Filas no cargadas porque todos los campos eran nulos.
@@ -200,8 +200,8 @@ Total de registros lógicos leídos:         250
 Total de registros lógicos rechazados:        51
 Total de registros lógicos desechados:        0
 
-La ejecución empezó en Mié Nov 08 00:21:13 2023
-La ejecución terminó en Mié Nov 08 00:21:15 2023
+La ejecución empezó en Mié Nov 08 03:44:33 2023
+La ejecución terminó en Mié Nov 08 03:44:35 2023
 
-Tiempo transcurrido:     00:00:01.96
-Tiempo de CPU:         00:00:00.04
+Tiempo transcurrido:     00:00:02.40
+Tiempo de CPU:         00:00:00.03

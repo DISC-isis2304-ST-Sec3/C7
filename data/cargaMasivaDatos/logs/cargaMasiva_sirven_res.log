@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 00:23:16 2023
+SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 03:45:44 2023
 Version 21.3.0.0.0
 
 Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
@@ -30,7 +30,7 @@ Registro 1: Rechazado - Error en tabla SIRVEN_RES, columna RESTAURANTES_ID.
 ORA-01722: número no válido
 
 Registro 2: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 3: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
@@ -108,7 +108,7 @@ Registro 27: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 28: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
 
 Registro 29: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
@@ -129,7 +129,7 @@ Registro 34: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 35: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 36: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
@@ -147,13 +147,13 @@ Registro 40: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 41: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 42: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 43: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 44: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
@@ -162,16 +162,16 @@ Registro 45: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 46: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
 
 Registro 47: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 48: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
 
 Registro 49: Rechazado - Error en tabla SIRVEN_RES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_PRODUCTOSRES_FK) violada - clave principal no encontrada
 
 Registro 50: Rechazado - Error en tabla SIRVEN_RES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SIRVERES_RESTAURANTES_FK) violada - clave principal no encontrada
@@ -197,8 +197,8 @@ Total de registros lógicos leídos:         250
 Total de registros lógicos rechazados:        51
 Total de registros lógicos desechados:        0
 
-La ejecución empezó en Mié Nov 08 00:23:16 2023
-La ejecución terminó en Mié Nov 08 00:23:18 2023
+La ejecución empezó en Mié Nov 08 03:45:44 2023
+La ejecución terminó en Mié Nov 08 03:45:46 2023
 
-Tiempo transcurrido:     00:00:01.59
-Tiempo de CPU:         00:00:00.07
+Tiempo transcurrido:     00:00:01.25
+Tiempo de CPU:         00:00:00.03

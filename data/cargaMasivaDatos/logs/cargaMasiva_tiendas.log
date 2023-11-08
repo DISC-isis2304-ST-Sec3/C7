@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 00:22:02 2023
+SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 03:45:14 2023
 Version 21.3.0.0.0
 
 Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
@@ -30,10 +30,25 @@ SERVICIOS_TIPO                       NEXT     *   ,       CHARACTER
 Registro 1: Rechazado - Error en tabla TIENDAS, columna ID.
 ORA-01722: número no válido
 
+Registro 2: Rechazado - Error en tabla TIENDAS.
+ORA-00001: restricción única (ISIS2304C15202320.TIENDAS_PK) violada
+
+Registro 3: Rechazado - Error en tabla TIENDAS.
+ORA-00001: restricción única (ISIS2304C15202320.TIENDAS_PK) violada
+
+Registro 4: Rechazado - Error en tabla TIENDAS.
+ORA-00001: restricción única (ISIS2304C15202320.TIENDAS_PK) violada
+
+Registro 5: Rechazado - Error en tabla TIENDAS.
+ORA-00001: restricción única (ISIS2304C15202320.TIENDAS_PK) violada
+
+Registro 6: Rechazado - Error en tabla TIENDAS.
+ORA-00001: restricción única (ISIS2304C15202320.TIENDAS_PK) violada
+
 
 Tabla TIENDAS:
-  5 Filas cargadas correctamente.
-  1 Fila no cargadas debido a errores de datos.
+  0 Filas cargadas correctamente.
+  6 Filas no cargadas debido a errores de datos.
   0 Filas no cargadas porque todas las cláusulas WHEN han fallado.
   0 Filas no cargadas porque todos los campos eran nulos.
 
@@ -43,11 +58,11 @@ Bytes de buffer de lectura: 1048576
 
 Total de registros lógicos omitidos:          0
 Total de registros lógicos leídos:           6
-Total de registros lógicos rechazados:         1
+Total de registros lógicos rechazados:         6
 Total de registros lógicos desechados:        0
 
-La ejecución empezó en Mié Nov 08 00:22:02 2023
-La ejecución terminó en Mié Nov 08 00:22:02 2023
+La ejecución empezó en Mié Nov 08 03:45:14 2023
+La ejecución terminó en Mié Nov 08 03:45:15 2023
 
-Tiempo transcurrido:     00:00:00.54
-Tiempo de CPU:         00:00:00.01
+Tiempo transcurrido:     00:00:00.58
+Tiempo de CPU:         00:00:00.03

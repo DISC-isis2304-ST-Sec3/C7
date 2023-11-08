@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 00:21:20 2023
+SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 03:44:40 2023
 Version 21.3.0.0.0
 
 Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
@@ -197,12 +197,12 @@ Espacio asignado a matriz de enlace:           387000 bytes (250 filas)
 Bytes de buffer de lectura: 1048576
 
 Total de registros lógicos omitidos:          0
-Total de registros lógicos leídos:         100
+Total de registros lógicos leídos:         250
 Total de registros lógicos rechazados:        51
 Total de registros lógicos desechados:        0
 
-La ejecución empezó en Mié Nov 08 00:21:20 2023
-La ejecución terminó en Mié Nov 08 00:21:22 2023
+La ejecución empezó en Mié Nov 08 03:44:40 2023
+La ejecución terminó en Mié Nov 08 03:44:41 2023
 
-Tiempo transcurrido:     00:00:02.58
-Tiempo de CPU:         00:00:00.07
+Tiempo transcurrido:     00:00:01.52
+Tiempo de CPU:         00:00:00.06

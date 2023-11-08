@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 00:21:57 2023
+SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 03:45:11 2023
 Version 21.3.0.0.0
 
 Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
@@ -41,9 +41,6 @@ ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) 
 Registro 5: Rechazado - Error en tabla OFRECEN.
 ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
-Registro 6: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
-
 Registro 7: Rechazado - Error en tabla OFRECEN.
 ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
@@ -53,137 +50,140 @@ ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) 
 Registro 9: Rechazado - Error en tabla OFRECEN.
 ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
+Registro 10: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
 Registro 11: Rechazado - Error en tabla OFRECEN.
 ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
-Registro 12: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
 Registro 13: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
-Registro 14: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 15: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
-Registro 16: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 17: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 18: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 19: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 20: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 21: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 22: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
-Registro 23: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 24: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 25: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 26: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 27: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
-Registro 28: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 29: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 30: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 31: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 32: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 33: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 34: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
-Registro 35: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 36: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 37: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 38: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 39: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 40: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 41: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
-Registro 42: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 43: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 44: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
-
-Registro 45: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 46: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 47: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 48: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 49: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 50: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 51: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 Registro 52: Rechazado - Error en tabla OFRECEN.
-ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SPAS_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 53: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 54: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 55: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 56: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 57: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 58: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 59: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
+
+Registro 60: Rechazado - Error en tabla OFRECEN.
+ORA-02291: restricción de integridad (ISIS2304C15202320.OFRECE_SERVICIOSSPA_FK) violada - clave principal no encontrada
 
 
 MÁXIMO DE ERRORES EXCEDIDO - Las estadísticas anteriores reflejan una ejecución parcial.
 
 Tabla OFRECEN:
-  1 Fila cargadas correctamente.
+  9 Filas cargadas correctamente.
   51 Filas no cargadas debido a errores de datos.
   0 Filas no cargadas porque todas las cláusulas WHEN han fallado.
   0 Filas no cargadas porque todos los campos eran nulos.
@@ -197,8 +197,8 @@ Total de registros lógicos leídos:         100
 Total de registros lógicos rechazados:        51
 Total de registros lógicos desechados:        0
 
-La ejecución empezó en Mié Nov 08 00:21:57 2023
-La ejecución terminó en Mié Nov 08 00:21:58 2023
+La ejecución empezó en Mié Nov 08 03:45:11 2023
+La ejecución terminó en Mié Nov 08 03:45:13 2023
 
-Tiempo transcurrido:     00:00:01.51
-Tiempo de CPU:         00:00:00.07
+Tiempo transcurrido:     00:00:02.19
+Tiempo de CPU:         00:00:00.04

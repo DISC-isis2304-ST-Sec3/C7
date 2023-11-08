@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 00:22:31 2023
+SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 03:45:22 2023
 Version 21.3.0.0.0
 
 Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
@@ -120,7 +120,7 @@ Registro 31: Rechazado - Error en tabla SERV_REUNIONES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SERVREUNION_REUNION_FK) violada - clave principal no encontrada
 
 Registro 32: Rechazado - Error en tabla SERV_REUNIONES.
-ORA-02291: restricción de integridad (ISIS2304C15202320.SERVREUNION_REUNION_FK) violada - clave principal no encontrada
+ORA-02291: restricción de integridad (ISIS2304C15202320.SERVREUNION_RESERVASERV_FK) violada - clave principal no encontrada
 
 Registro 33: Rechazado - Error en tabla SERV_REUNIONES.
 ORA-02291: restricción de integridad (ISIS2304C15202320.SERVREUNION_REUNION_FK) violada - clave principal no encontrada
@@ -197,8 +197,8 @@ Total de registros lógicos leídos:         100
 Total de registros lógicos rechazados:        51
 Total de registros lógicos desechados:        0
 
-La ejecución empezó en Mié Nov 08 00:22:31 2023
-La ejecución terminó en Mié Nov 08 00:22:33 2023
+La ejecución empezó en Mié Nov 08 03:45:22 2023
+La ejecución terminó en Mié Nov 08 03:45:24 2023
 
-Tiempo transcurrido:     00:00:01.95
-Tiempo de CPU:         00:00:00.11
+Tiempo transcurrido:     00:00:01.53
+Tiempo de CPU:         00:00:00.01

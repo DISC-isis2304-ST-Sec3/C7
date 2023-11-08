@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 00:21:41 2023
+SQL*Loader: Release 21.0.0.0.0 - Production on Mié Nov 8 03:44:49 2023
 Version 21.3.0.0.0
 
 Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
@@ -36,7 +36,7 @@ ORA-01722: número no válido
 Registro 2: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 3: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 3: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 Registro 4: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
@@ -48,7 +48,7 @@ ORA-01843: mes no válido
 Registro 6: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 7: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
+Registro 7: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
 ORA-01843: mes no válido
 
 Registro 8: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
@@ -57,7 +57,7 @@ ORA-01843: mes no válido
 Registro 9: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 10: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
+Registro 10: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
 ORA-01843: mes no válido
 
 Registro 11: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
@@ -66,34 +66,31 @@ ORA-01843: mes no válido
 Registro 12: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 13: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 13: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 14: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 14: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 Registro 15: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 16: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 16: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 Registro 17: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 18: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
+Registro 19: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
 ORA-01843: mes no válido
 
-Registro 19: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
+Registro 20: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
 ORA-01843: mes no válido
 
-Registro 20: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
+Registro 21: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 21: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
-ORA-01843: mes no válido
-
-Registro 22: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 22: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 Registro 23: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
@@ -102,7 +99,7 @@ ORA-01843: mes no válido
 Registro 24: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 25: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 25: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 Registro 26: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
@@ -123,13 +120,13 @@ ORA-01843: mes no válido
 Registro 31: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 32: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 32: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 Registro 33: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
 ORA-01843: mes no válido
 
-Registro 34: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 34: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 Registro 35: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
@@ -165,6 +162,9 @@ ORA-01843: mes no válido
 Registro 45: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
+Registro 46: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
+ORA-01843: mes no válido
+
 Registro 47: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
@@ -180,14 +180,14 @@ ORA-01843: mes no válido
 Registro 51: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
-Registro 53: Rechazado - Error en tabla PISCINAS, columna HORA_FIN.
+Registro 52: Rechazado - Error en tabla PISCINAS, columna HORA_INICIO.
 ORA-01843: mes no válido
 
 
 MÁXIMO DE ERRORES EXCEDIDO - Las estadísticas anteriores reflejan una ejecución parcial.
 
 Tabla PISCINAS:
-  2 Filas cargadas correctamente.
+  1 Fila cargadas correctamente.
   51 Filas no cargadas debido a errores de datos.
   0 Filas no cargadas porque todas las cláusulas WHEN han fallado.
   0 Filas no cargadas porque todos los campos eran nulos.
@@ -201,8 +201,8 @@ Total de registros lógicos leídos:         100
 Total de registros lógicos rechazados:        51
 Total de registros lógicos desechados:        0
 
-La ejecución empezó en Mié Nov 08 00:21:41 2023
-La ejecución terminó en Mié Nov 08 00:21:43 2023
+La ejecución empezó en Mié Nov 08 03:44:49 2023
+La ejecución terminó en Mié Nov 08 03:44:51 2023
 
-Tiempo transcurrido:     00:00:01.38
+Tiempo transcurrido:     00:00:01.86
 Tiempo de CPU:         00:00:00.01
