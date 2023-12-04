@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nuevo PC</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+
+</head>
+
+<body>
+
+</br>
+<div th:fragment="planConsumoNuevoForm(titulo)" class="container border border-2 w-25">
+    <h1 class="text-center" th:text="${titulo}"></h1>
+
+    <form>
+
+            <label class="col-form-label" for="tipoplan">Tipo Plan:</label>
+            <select class="form-control" id="tipoplan" name="tipoplan" required>
+                <option value="Larga_Estadia" th:selected="${planConsumo.tipoplan eq 'Larga_Estadia'}">Larga_Estadia</option>
+                <option value="Promo_Particular" th:selected="${planConsumo.tipoplan eq 'Promo_Particular'}">Promo_Particular</option>
+                <option value="Tiempo_Compartido" th:selected="${planConsumo.tipoplan eq 'Tiempo_Compartido'}">Tiempo_Compartido</option>
+                <option value="Todo_Incluido" th:selected="${planConsumo.tipoplan eq 'Todo_Incluido'}">Todo_Incluido</option>
+            </select>
+
+            <label class="col-form-label">Descuento (%):</label>
+            <input class="form-control" type="text" id="descuento" name="descuento" required th:value="${planConsumo.descuento}" />
+
+
+            <label class="col-form-label" for="hotel">Hotel:</label>
+            <select class="form-control" id="hotel" name="hotel"  required>
+                <option  th:each="hotel : ${hoteles}" th:value="${hotel.id}" th:text="${hotel.nombre}">${hotel.id}</option>
+
+
+            </select>
+
+
+
+            <div class="text-center">
+                <input type="submit" value="Guardar" class="btn btn-primary">
+                <a th:href="@{/planesConsumo}" class="btn btn-primary">Cancelar</a>
+            </div>
+
+    </form>
+    </br>
+</div>
+
+</body>
+
+</html>
