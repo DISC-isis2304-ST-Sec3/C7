@@ -1,0 +1,19 @@
+db.createCollection("Reserva",
+{
+    validator: 
+    {
+        $jsonSchema:
+        {
+            bsonType:"object",
+            required: ["fechaIngreso", "fechaSalida","numeroPersonas","habitacion", "idCliente"],
+            properties:
+            {
+                fechaIngreso:{bsonType:"date"},
+                fechaSalida:{bsonType:"date"},
+                numeroPersonas:{bsonType:"int"},
+                habitacion:{bsonType:"string"},
+                idCliente:{bsonType:"int"}
+            }
+        }
+    }
+});

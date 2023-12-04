@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear habitacion</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <br>
+    <div class="container border border-2 w-70">    
+
+    <h1 class="text">Crear habitacion</h1>
+
+    <form th:action="@{/habitaciones/new/save}" method="post">
+        
+        <label class="col-form-label" for="capacidad">capacidad de la habitación</label>
+        <input class="form-control" type="number" id="capacidad" name="capacidad" value = 0 ><br>
+        
+        <label class="col-form-label" for="precio">precio de la habitación</label>
+        <input class="form-control" type="number" id="precio" name="precio" value = 0 ><br>
+        
+        <label class="col-form-label" for="comsumos">comsumos</label>
+        <input class="form-control" type="arrayList<>" id="comsumos" name="comsumos" required><br>
+        
+        <label class="col-form-label" for="tiposHabitacion">Tipo de habitación</label>
+        <select class="form-control" id="tiposHabitacion" name="tipoHabitacion" required>
+            <option th:each="tipoHabitacion : ${tiposHabitacion}" th:value="${tipoHabitacion.tipo}" th:text="${tipoHabitacion.tipo}"></option>
+        </select><br>
+
+        <br>
+        <div class="text-center">
+        <input type="submit" value="Guardar" class="btn btn-primary">
+        <a th:href="@{/habitaciones}" class="btn btn-primary">Cancelar</a>
+        </div>
+    </br>
+    </form>
+    </div>
+</body>
+</html>
